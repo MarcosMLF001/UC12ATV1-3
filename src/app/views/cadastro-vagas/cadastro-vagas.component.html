@@ -1,0 +1,27 @@
+<form>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome da vaga</label>
+        <input type="text" class="form-control" id="nome" {(ngModel)}="dados.nome" name="nome" required>
+    </div>
+
+
+    <div class="mb-3">
+        <label for="foto" class="form-label">Nome da foto</label>
+        <input type="text" class="form-control" id="foto" name="foto" {(ngModel)}="dados.foto" aria-describedby="fotohelp" required>
+        <div id="fotohelp" class="form-text">Indique o nome da foto a ser utilizada com a descrição.</div>
+    </div>
+
+    <div class="mb-3">
+        <!--Descrição vaga-->
+        <label for="descricao" class="form-label">Descrição da vaga</label>
+        <textarea class="form-control" id="descricao" {(ngModel)}="dados.descricao" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="salario" class="form-label">Salário da foto</label>
+        <input type="number" class="form-control" id="salario" step=".01" {(ngModel)}="dados.salario" name="salario" required>
+    </div>
+
+
+    <button class="btn btn-primary" (click)="gravar()">Gravar</button>
+</form>
