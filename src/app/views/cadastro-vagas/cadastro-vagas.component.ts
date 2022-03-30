@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterTestingModule } from '@angular/router/testing';
+import { Router } from '@angular/router';
+import { Vagas } from 'src/app/models/vagas.model';
 import { VagasServiceService } from 'src/app/services/vagas-service.service';
 
 @Component({
@@ -12,7 +13,7 @@ dados : Vagas = {
   nome: "",
   foto: "",
   descricao: "",
-  salario: "0"
+  salario: 0
 }
   constructor(private vagasServico : VagasServiceService,
     private router : Router) { }

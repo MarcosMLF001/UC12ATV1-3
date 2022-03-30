@@ -10,7 +10,7 @@ import { FooterComponent } from './views/footer/footer.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 import { MuralVagasComponent } from './views/mural-vagas/mural-vagas.component';
 import { CadastroVagasComponent } from './views/cadastro-vagas/cadastro-vagas.component';
-import { HttpClientModules }from '@angular/common/http'
+import { HttpClientModule }from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModules,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

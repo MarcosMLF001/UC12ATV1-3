@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Vagas } from 'src/app/models/vagas.models';
 import { VagasServiceService } from 'src/app/services/vagas-service.service';
 
 @Component({

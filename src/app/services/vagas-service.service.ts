@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VagasServiceService {
-baseURL = "htp://www.localhost:4200/vagas"
+baseURL = "htp://www.localhost:3000/vagas"
   constructor(private http: HttpClient) {
   }
 
@@ -24,8 +24,8 @@ baseURL = "htp://www.localhost:4200/vagas"
   }
 
   updateVagas(dados : Vagas) : Observable<Vagas> {
-    const url = ${this.baseURL}/${dados.id};
-    return this.http.put<Vagas>(url)
+    const url = '${this.baseURL}/${dados.id}';
+    return this.http.put<Vagas>(url,dados);
   }
   deleteVagas(id : number) : Observable<Vagas>{
     const url = '${this.baseURL}/${id}';
